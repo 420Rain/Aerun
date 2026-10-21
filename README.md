@@ -1,56 +1,21 @@
-# Welcome to your Expo app 👋
+# Aerun
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aerun is an environment-aware running companion concept for recreational runners in Metro Manila. This Expo Go compatible pitch prototype compares illustrative running conditions and schematic route options, with a fictional local community feed. The primary colors are black and aqua (`#8AFFFF`).
 
-## Get started
+## Run the prototype
 
-1. Install dependencies
+Install the project dependencies with `npm install`, then start Expo with `npx expo start`. Open the QR code in Expo Go on your phone. The development server is not started automatically.
 
-   ```bash
-   npm install
-   ```
+## Explore
 
-2. Start the app
+- **Today:** compare four demo time windows and view sample PM2.5 and weather conditions.
+- **Routes:** select one of two schematic route concepts and compare invented sample ranges.
+- **Activity:** view a sample run and the currently selected route and time context.
+- **Community:** browse fictional demo runs, filter the feed, give Kudos, comment, and join local sample challenges.
+- **Profile:** try local preference controls and review demo follower counts, shared posts, and joined challenges. Switches do not send notifications.
 
-   ```bash
-   npx expo start
-   ```
+Use **Share run** on Activity to preview and publish a sample activity into the Community feed for the current session. Captions, reactions, comments, filters, and challenge progress stay local and reset when the app restarts.
 
-In the output, you'll find options to open the app in a
+## Demo data and limitations
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Environmental values are in [`src/data/mockData.ts`](src/data/mockData.ts); fictional runner posts and challenges are in [`src/data/socialMockData.ts`](src/data/socialMockData.ts). The selected time, route, feed filter, reactions, comments, posts, and challenge progress are shared across screens for the current app session. No location permission, GPS, backend, API, account, database, live air-quality feed, live map, notification, external sharing, or analytics service is used. The route illustration is not for navigation. PM2.5 and weather values are illustrative mock data, not measurements, research findings, health advice, inhaled-dose estimates, or safety guarantees. Activity values are sample data and do not imply environmental causes for pace changes. All runner identities and follower counts are fictional.
